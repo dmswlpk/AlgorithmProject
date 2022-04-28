@@ -49,7 +49,7 @@ public class OddEvenArrayTest {
     }
 
     @Test
-    public void oddEvenTestTestNeg1(){ /**Test Data:
+    public void oddEvenTestTestNeg2(){ /**Test Data:
      -345 →  “Odd”
      0 →  “Even”
      222222 →  “Even”

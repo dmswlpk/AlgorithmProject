@@ -11,18 +11,15 @@ public class OddEvenNumber {
      */
 
 
-    public String oddEvenNumber(int n) {
-        if (n > Integer.MIN_VALUE && n > Integer.MAX_VALUE) {
-
-            if (n % 2 == 0) {
+    public String oddEvenNumber(long n) {
+        if (n < Integer.MIN_VALUE || n > Integer.MAX_VALUE) {
+            return "Undefined";
+        } else if (n % 2 == 0) {
 
                 return "Even";
-            } else {
+        } else {
 
                 return "Odd";
             }
-
-        }
-        return "Undefined";
-    }
+}
 }
