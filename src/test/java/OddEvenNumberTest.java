@@ -1,7 +1,9 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 public class OddEvenNumberTest {
+    @Order(1)
     @Test
     public void oddEvenTestTestHappyPath(){ /**Test Data:
      -345 →  “Odd”
@@ -11,13 +13,14 @@ public class OddEvenNumberTest {
 
         int n = -345 ;
         String expectedResult = "Odd";
+
         OddEvenNumber oddEven = new OddEvenNumber();
         String actualResult = oddEven.oddEvenNumber(n);
 
         Assertions.assertEquals(expectedResult,actualResult);
     }
 
-
+    @Order(2)
     @Test
     public void oddEvenTestTestHappyPath2(){ /**Test Data:
      -345 →  “Odd”
@@ -33,6 +36,8 @@ public class OddEvenNumberTest {
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
+
+    @Order(3)
     @Test
     public void oddEvenTestTestNegativeTest1(){ /**Test Data:
      -345 →  “Odd”
@@ -48,6 +53,7 @@ public class OddEvenNumberTest {
         Assertions.assertEquals(expectedResult,actualResult);
     }
 
+    @Order(4)
     @Test
     public void oddEvenTestTestNeg2(){ /**Test Data:
      -345 →  “Odd”

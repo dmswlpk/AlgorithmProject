@@ -50,7 +50,7 @@ public class AreNumbersEqualTest {
         Assertions.assertEquals(expectedResult,actualResult);
     }
 
-    @Order(3)
+    @Order(4)
     @Test
     public void testAreNumbersEqualNegativePathNonEqualNumbers2(){
         // 89, -89
@@ -64,6 +64,4 @@ public class AreNumbersEqualTest {
 
         Assertions.assertEquals(expectedResult,actualResult);
     }
-
-
 }

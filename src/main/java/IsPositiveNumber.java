@@ -1,18 +1,16 @@
 public class IsPositiveNumber {
 
-    public boolean isPositiveNumberAlgorithm(int a){
         /** Напишите алгоритм IsPositiveNumber, который возвращает true,
-     если численный  параметр больше или равен нулю, и возвращает false, если параметр меньше 0.
-     Проверьте работу метода на числах 555, 0 и -555. */
+         если численный  параметр больше или равен нулю, и возвращает false, если параметр меньше 0.
+         Проверьте работу метода на числах 555, 0 и -555. */
 
-    if (a >= 0) {
+    public  boolean isPositiveNumberAlgorithm(int a){
 
-        return true;
+        return a >= 0 ? true : false;
+
     }
 
-    return false;
-
-     }
+    // num1 >= num2 ? num1 : num2
 
 
 }

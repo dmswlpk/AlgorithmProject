@@ -1,13 +1,18 @@
 public class SumArrayAlgorithm3 {
 
-    public int SumArrayAlgorithm(int[] array){
+    public int sumArrayAlgorithm(int[] array){
         int sum = 0;
-        for (int i = 0; i < array.length; i++){
-            sum = sum + array[i];
+        if (array.length != 0){
+            for (int i = 0; i < array.length; i++){
+                sum += array[i];
+            }
+
+            return sum;
         }
 
-        return sum;
+        return 0;
     }
+
 
 
 }

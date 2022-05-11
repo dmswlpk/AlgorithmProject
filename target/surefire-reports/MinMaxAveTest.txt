@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: MinMaxAveTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+MinMaxAveTest.testMinMaxAvePositivePath()  Time elapsed: 0 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: array contents differ at index [2], expected: <5> but was: <7>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.AssertArrayEquals.failArraysNotEqual(AssertArrayEquals.java:432)
+	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:244)
+	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:90)
+	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:86)
+	at org.junit.jupiter.api.Assertions.assertArrayEquals(Assertions.java:1260)
+	at MinMaxAveTest.testMinMaxAvePositivePath(MinMaxAveTest.java:18)
+
+MinMaxAveTest.testMinMaxAveNegativePath2()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.ArithmeticException: / by zero
+	at MinMaxAve.getMinMaxAverageAlgorithm(MinMaxAve.java:28)
+	at MinMaxAveTest.testMinMaxAveNegativePath2(MinMaxAveTest.java:46)
+
