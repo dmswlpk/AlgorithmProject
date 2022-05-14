@@ -6,9 +6,7 @@ public class StartsWithLetterTest {
     @Order(1)
     @Test
     public void testStartsWithLetter() {
-        String [] str = {"As a decrepit father takes delight\n" +
-                "To see his active child do deeds of youth,\n" +
-                "So I, made lame by fortune’s dearest spite,\n" +
+        String str = ", made lame by fortune’s dearest spite,\n" +
                 "Take all my comfort of thy worth and truth.\n" +
                 "For whether beauty, birth, or wealth, or wit,\n" +
                 "Or any of these all, or all, or more,\n" +
@@ -19,11 +17,11 @@ public class StartsWithLetterTest {
                 "That I in thy abundance am sufficed,\n" +
                 "And by a part of all thy glory live.\n" +
                 "Look what is best, that best I wish in thee.\n" +
-                "This wish I have; then ten times happy me."};
+                "This wish I have; then ten times happy me.";
         String[] expectedResult = {"lame, love, lame, live, Look"};
 
         StartsWithLetterAlgorithm startsWithLetterAlgorithm = new StartsWithLetterAlgorithm();
-        String[] actualResult = StartsWithLetterAlgorithm.getStartsWithLettersAlgorithm(str, 'l');
+        String[] actualResult = startsWithLetterAlgorithm.getStartsWithLettersAlgorithm(str, 'l');
 
         Assertions.assertArrayEquals(expectedResult, actualResult);
     }

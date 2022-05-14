@@ -16,4 +16,16 @@ public class StringToNumbersAlgorithmTest {
 
         Assertions.assertEquals(expectedResult,actualResult);
     }
+
+    @Order(2)
+    @Test
+    public void testStringToNumbersHappyPathNegativeNumbers(){
+        String str = " -1,-3,0, 33 ";
+        String expectedResult = "-1-3033";
+
+        StringToNumbersAlgorithm stringToNumbersAlgorithm = new StringToNumbersAlgorithm();
+        String actualResult = stringToNumbersAlgorithm.getStringToNumbersAlgorithm(str);
+
+        Assertions.assertEquals(expectedResult,actualResult);
+    }
 }
